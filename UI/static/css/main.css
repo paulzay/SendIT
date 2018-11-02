@@ -214,15 +214,18 @@ form {
   margin-top: 0em;
   padding: 30px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .quoteform .form-group {
   position: relative;
 }
+
 .form-group {
   position: relative;
   margin-bottom: 1rem;
