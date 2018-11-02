@@ -16,12 +16,12 @@
         </div>
         <nav>
             <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="signup.html">Sign Up</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="create.html">Create Order</a></li>
-              <li><a href="userprofile.html">My Profile</a></li>
-              <li><a href="admin.html">Admin</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create.html">Create Order</a></li>
+                <li><a href="userprofile.html">My Profile</a></li>
+                <li><a href="admin.html">Admin</a></li>
             </ul>
           </div>
         </nav>
@@ -30,7 +30,7 @@
     <div class="container">
       <form class="my-form">
         <div class="form-group">
-          <h2>Change Parcel Delivery Order Destination</h2>
+          <h2>Change Parcel Location/Status</h2>
         <div class="input-field">
                 <label for="product_name">Tracker ID.</label>
                 <input type="number" name="sender" id="sender_id" value=0710789776 >
@@ -62,7 +62,7 @@
                 <option value="9">Thika</option>
                 <option value="10">Meru</option>
             </select>
-        </div>
+        </div>      
         <div class="input-field">
                 <label for="items">Quantity</label>
                 <input type="text" name="items" id="items" value="2" >
@@ -71,6 +71,31 @@
             <label for="weight">Weight</label>
             <input type="text" name="weight" id="weight" value="15kg" >
         </div>
+        <div class="input-field">
+            <h2>Parcel Status</h2>
+            <select>
+                <optgroup label="">
+                    <option value="1" selected="selected">Transit</option>
+                    <option value="2">Delivered</option>
+
+                </optgroup>
+            </select>
+        </div> 
+        <div class="input-field">
+            <h2>Parcel Location</h2>
+            <select>
+                <option value="1" selected="selected">Nairobi</option>
+                <option value="2">Nakuru</option>
+                <option value="3">Mombasa</option>
+                <option value="4">Kisumu</option>
+                <option value="5">Naivasha</option>
+                <option value="6">Bomet</option>
+                <option value="7">Narok</option>
+                <option value="8">Mahi Mahiu</option>
+                <option value="9">Thika</option>
+                <option value="10">Meru</option>
+            </select>
+        </div>      
         <button class="mitbut" type="submit">Save Change</button>
 
       </form>
