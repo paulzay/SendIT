@@ -11,8 +11,12 @@ body{
   padding-bottom: 40px;
 
 }
+* {
+  box-sizing: border-box;
+  }
+  
 .container{
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 a{
@@ -123,19 +127,6 @@ input[type="number"]{
   border: solid navy;
 }
 
-.mitbut{
-  background-color: navy;
-  width: 260px;
-  height: 45px;
-  border: none;
-  background: navy;
-  text-align: center;
-  color: white;
-  
-}
-.mitbut:hover{
-  opacity: 1;
-}
 .sign-up a{
   color: #000000;
 }
@@ -231,9 +222,6 @@ form {
   margin-bottom: 1rem;
 }
 
-* {
-box-sizing: border-box;
-}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -262,7 +250,7 @@ input[type=submit]:hover {
     background-color: navy;
 }
 
-textbox {
+.textbox {
   border: 0;
   border-bottom: 1px solid #c3c3c3;
   background: none;
