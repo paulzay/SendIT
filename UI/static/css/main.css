@@ -11,8 +11,12 @@ body{
   padding-bottom: 40px;
 
 }
+* {
+  box-sizing: border-box;
+  }
+  
 .container{
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 a{
@@ -123,19 +127,6 @@ input[type="number"]{
   border: solid navy;
 }
 
-.mitbut{
-  background-color: navy;
-  width: 260px;
-  height: 45px;
-  border: none;
-  background: navy;
-  text-align: center;
-  color: white;
-  
-}
-.mitbut:hover{
-  opacity: 1;
-}
 .sign-up a{
   color: #000000;
 }
@@ -230,16 +221,36 @@ form {
   position: relative;
   margin-bottom: 1rem;
 }
-.booking_form label {
-  color: #000;
-  font-size: 16px;
-}
-label {
-  display: inline-block;
-  margin-bottom: .5rem;
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-textbox {
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: navy;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: navy;
+}
+
+.textbox {
   border: 0;
   border-bottom: 1px solid #c3c3c3;
   background: none;
