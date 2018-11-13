@@ -56,6 +56,7 @@ nav li{
   display: inline-block;
   margin-left: 50px;
   padding-top: 30px;
+  position: relative;
 }
 
 nav a{
@@ -73,17 +74,10 @@ nav a{
     color: white;
     padding: 10px;
     margin: 0px;
-    position: relative;
+    position: fixed;
     width: 100%;
     margin-top: 3em;
     clear: both;
-}
-
-.navbar li{
-    list-style: none;
-    text-decoration: none;
-    padding: 0%;
-    float: left;
 }
 
 .form-group{
@@ -106,27 +100,39 @@ input[type="text"]{
   display: block;
   margin-bottom: 25px;
   width: 100%;
-  border: solid navy;
+ 
 }
 input[type="password"]{
   display: block;
   margin-bottom: 25px;
   width: 100%;
-  border: solid navy;
+  
 }
 input[type="email"]{
   display: block;
   margin-bottom: 25px;
   width: 100%;
-  border: solid navy;
+  
 }
 input[type="number"]{
   display: block;
   margin-bottom: 25px;
   width: 100%;
-  border: solid navy;
+  
 }
-
+.mitbut{
+  background-color: navy;
+  width: 150px;
+  height: 45px;
+  border: none;
+  background: navy;
+  text-align: center;
+  color: white;
+  
+}
+.mitbut:hover{
+  opacity: 1;
+}
 .sign-up a{
   color: #000000;
 }
@@ -140,38 +146,7 @@ input[type="number"]{
   margin: 20px;
   background-color: dimgray;
 }
-.mymenu{
-  border: 2px solid rgb(53, 52, 52);
-  padding: 0px 0px;
-  margin: 20px;
-  top: 0px;
-  
-}
-.mymenu a{
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-  display: inline;
-  color: #000;
-}
-.mymenu a:hover{
-  color: blueviolet;
-}
-.mymenu:hover
-.quote {
-  margin-bottom: 60px;
-}
-.mymenu ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.mymenu li{
-  display: inline-block;
-  margin-left: 50px;
-  padding-top: 30px;
-}
+
 .box-shadow {
   background-color: #fff;
   box-shadow: 0 1px 8px -3px rgba(0,0,0,0.5);
@@ -236,20 +211,6 @@ label {
     display: inline-block;
 }
 
-input[type=submit] {
-    background-color: navy;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=submit]:hover {
-    background-color: navy;
-}
-
 .textbox {
   border: 0;
   border-bottom: 1px solid #c3c3c3;
@@ -273,15 +234,7 @@ optgroup {
   font-weight: bolder;
   display: block;
 }
-.material-textbox ~ .focus-border, .select2-container--above ~ .focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #39F;
-  transition: .4s;
-}
+
 table{
   margin-top: 9px;
   table-layout: fixed;
@@ -322,3 +275,11 @@ tbody tr:nth-child(even){
 tbody tr:hover{
   background: #fff;
 }
+
+html {
+  background-size: cover;
+}
+
+.index-bg {
+  background: url(UI/static/img/indexbg.jpg) no-repeat center center fixed;
+  }
